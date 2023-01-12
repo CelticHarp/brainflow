@@ -2,6 +2,7 @@
 #include <string>
 #include "greeting.h"
 
+// Implementation taken from https://medium.com/jspoint/a-simple-guide-to-load-c-c-code-into-node-js-javascript-applications-3fcccf54fd32
 // native C++ function that is assigned to 'greetHello' property on exports object
 Napi::String greetHello(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
