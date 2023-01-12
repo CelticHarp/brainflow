@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "greeting",
+      "target_name": "greet",
       "cflags!": [ "-fno-exceptions" ],
       "cflags_cc!": [ "-fno-exceptions" ],
       "sources": [

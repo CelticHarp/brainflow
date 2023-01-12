@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm run configure && npm run build",
+    "configure": "node-gyp configure",
     "build": "node-gyp rebuild"
   },
   "gypfile": true,

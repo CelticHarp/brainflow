@@ -1,2 +1,2 @@
-const addon = require('bindings')('greeting'); // import 'greeting.node'
+const addon = require('bindings')('greet'); // import 'greet.node'
 exports.greetHello = addon.greetHello;
