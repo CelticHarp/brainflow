@@ -1,0 +1,17 @@
+{
+  "name": "brainflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^5.0.0",
+    "node-gyp": "^9.3.1"
+  }
+}
