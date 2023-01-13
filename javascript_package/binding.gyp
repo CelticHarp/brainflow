@@ -1,17 +1,21 @@
 {
   "targets": [
     {
-      "target_name": "greet",
-      "cflags!": [ "-fno-exceptions" ],
-      "cflags_cc!": [ "-fno-exceptions" ],
+      "target_name": "data_handler",
+      "type": "shared_library",
+      'include_dirs': [
+        "../src/utils/inc",
+        "../src/data_handler/inc",
+        "../third_party",
+        "../third_party/DSPFilters/include",
+        "../third_party/wavelib/header",
+        ],
       "sources": [
-        "./src/greeting.cpp",
-        "./src/index.cpp"
+        "../src/data_handler/data_handler.cpp"
       ],
-      "include_dirs": [
-        "<!@(node -p \"require('node-addon-api').include\")"
+      "libraries": [
+        "<(module_root_dir)/tobii/lib/x64/tobii_stream_engine.lib"
       ],
-      'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
     }
   ]
 }

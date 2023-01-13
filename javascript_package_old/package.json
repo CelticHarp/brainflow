@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm run configure && npm run build",
     "configure": "node-gyp configure",
-    "build": "node-gyp rebuild",
-    "start": "node index.js"
+    "build": "node-gyp rebuild"
   },
   "gypfile": true,
   "keywords": [],
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "bindings": "^1.5.0",
-    "ffi-napi": "^4.0.3",
+    "node-addon-api": "^5.0.0",
     "node-gyp": "^9.3.1"
   }
 }
